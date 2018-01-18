@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Пономарев](https://up.htmlacademy.ru/adaptive/13/user/511341).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев](https://up.htmlacademy.ru/htmlcss/19/user/24186).
 
 ---
 
