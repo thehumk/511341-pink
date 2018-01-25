@@ -7,7 +7,7 @@
 <body>
     <header class="header-page">
         <a class="logo" href="index.html">PINK</a>
-        <nav class="header-nav">
+        <nav class="main-nav">
             <button type="button" class="header-nav__toggle">Открыть меню</button>
             <ul class="header-nav__list site-list">
                 <li class="site-list__item">
@@ -32,94 +32,94 @@
             <form class="form" method="post" action="#">
                 <fieldset class="form__fio">
                     <p class="form__fio-item">
-                        <label for="surname">
+                        <label>
                             Фамилия:
-                            <input class="input form__fio-input" type="text" placeholder="Укажите фамилию*" name="surname" id="surname">
+                            <input class="input form__fio-input" type="text" placeholder="Укажите фамилию*" name="surname">
                         </label>
                     </p>
                     <p class="form__fio-item">
-                        <label for="name">
+                        <label>
                             Имя:
-                            <input class="input form__fio-input" type="text" placeholder="Введите ваше имя*" name="name" id="name">
+                            <input class="input form__fio-input" type="text" placeholder="Введите ваше имя*" name="name">
                         </label>
                     </p>
                     <p class="form__fio-item">
-                        <label for="patronymic">
+                        <label>
                             Отчество:
-                            <input class="input form__fio-input" type="text" placeholder="Ну и отчество тоже" name="patronymic" id="patronymic">
+                            <input class="input form__fio-input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
                         </label>
                     </p>
                 </fieldset>
                 <fieldset class="form__achieve">
                     <legend class="form__achive-title">Ваши безбашенные достижения в путешествии</legend>
                     <p class="form__achieve-item">
-                        <label for="selfie">
-                            <input class="form__achieve-input" type="checkbox" name="selfie" id="selfie" checked>
+                        <label>
+                            <input class="form__achieve-input" type="checkbox" name="selfie" checked>
                             Сделал селфи с акулой
                         </label>
                     </p>
                     <p class="form__achieve-item">
-                        <label for="beach">
-                            <input class="form__achieve-input" type="checkbox" name="beach" id="beach" checked>
+                        <label>
+                            <input class="form__achieve-input" type="checkbox" name="beach" checked>
                             Обгорел на пляже
                         </label>
                     </p>
                     <p class="form__achieve-item">
-                        <label for="norris">
-                            <input class="form__achieve-input" type="checkbox" name="norris" id="norris">
+                        <label >
+                            <input class="form__achieve-input" type="checkbox" name="norris">
                             Видел Чака Норриса
                         </label>
                     </p>
                     <p class="form__achieve-item">
-                        <label for="souvenir">
-                            <input class="form__achieve-input" type="checkbox" name="souvenir" id="souvenir">
+                        <label>
+                            <input class="form__achieve-input" type="checkbox" name="souvenir">
                             Накупил сувениров
                         </label>
                     </p>
                     <p class="form__achieve-item">
-                        <label for="tower">
-                            <input class="form__achieve-input" type="checkbox" name="tower" id="tower" checked>
+                        <label>
+                            <input class="form__achieve-input" type="checkbox" name="tower" checked>
                             Удержал башню
                         </label>
                     </p>
                     <p class="form__achieve-item">
-                        <label for="hotel">
-                            <input class="form__achieve-input" type="checkbox" name="hotel" id="hotel">
+                        <label>
+                            <input class="form__achieve-input" type="checkbox" name="hotel">
                             Разгромил отель
                         </label>
                     </p>
                 </fieldset>
                 <fieldset class="form__contacts">
                     <p class="form__contacts-item">
-                        <label for="phone">
+                        <label>
                             Номер телефона
-                            <input class="input form__contacts-input" type="tel" name="phone" id="phone">
+                            <input class="input form__contacts-input" type="tel" name="phone">
                         </label>
                     </p>
                     <p class="form__contacts-item">
-                        <label for="mail">
+                        <label>
                             Введите почту*
-                            <input class="input form__contacts-input" type="email" name="mail" id="mail">
+                            <input class="input form__contacts-input" type="email" name="mail">
                         </label>
                     </p>
                 </fieldset>
                 <fieldset class="form__app">
                     <legend class="form__app-title">С каким приложением путешествовали?</legend>
                     <p class="form__app-item">
-                        <label for="app-ios">
-                            <input class="form__app-input" type="radio" name="os-app" id="app-ios">
+                        <label>
+                            <input class="form__app-input" type="radio" name="os-app">
                             Pink для iOS
                         </label>
                     </p>
                     <p class="form__app-item">
-                        <label for="app-android">
-                            <input class="form__app-input" type="radio" name="os-app" id="app-android">
+                        <label>
+                            <input class="form__app-input" type="radio" name="os-app">
                             Pink на Android
                         </label>
                     </p>
                     <p class="form__app-item">
-                        <label for="app-windows">
-                            <input class="form__app-input" type="radio" name="os-app" id="app-windows">
+                        <label>
+                            <input class="form__app-input" type="radio" name="os-app">
                             Windows Phone
                         </label>
                     </p>
@@ -134,7 +134,7 @@
         </section>
     </main>
     <footer class="footer-page">
-        <a class="logo" href="index.html">PINK</a>
+        <a class="logo--footer" href="index.html">PINK</a>
         <section class="social">
             <a class="social__twitter" href="#">Твиттер</a>
             <a class="social__fb" href="#">Фейсбук</a>
@@ -142,7 +142,7 @@
         </section>
         <section class="creator">
             <p>Разработано</p>
-            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
+            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt=""></a>
         </section>
     </footer>
 </body>
