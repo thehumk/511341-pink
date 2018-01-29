@@ -6,129 +6,129 @@
 </head>
 <body>
     <header class="header-page">
-        <a class="logo" href="index.html">PINK</a>
+        <a class="logo" href="index.html"><img src="#" alt="Pink"></a>
         <nav class="main-nav">
             <button type="button" class="main-nav__toggle">Открыть меню</button>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item">
-                    <a href="index.html">Главная</a>
+                    <a class="site-list__link" href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="photo.html">Фотографии</a>
+                    <a class="site-list__link" href="photo.html">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                    <a>Конкурс</a>
+                    <a class="site-list__link">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                    <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main class="main-page">
-        <h1 class="form-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <section class="main content">
+        <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <section class="main-content">
             <h2>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
             <form class="form" method="post" action="#">
-                <fieldset class="form__fieldset--fio">
+                <fieldset class="form__fieldset form__fieldset--fio">
                     <p class="form__fio-item">
                         <label class="form__label">
                             Фамилия:
-                            <input class="form__fio-input" type="text" placeholder="Укажите фамилию*" name="surname">
+                            <input class="form__input" type="text" placeholder="Укажите фамилию*" name="surname">
                         </label>
                     </p>
                     <p class="form__fio-item">
                         <label class="form__label">
                             Имя:
-                            <input class="form__fio-input" type="text" placeholder="Введите ваше имя*" name="name">
+                            <input class="form__input" type="text" placeholder="Введите ваше имя*" name="name">
                         </label>
                     </p>
                     <p class="form__fio-item">
                         <label class="form__label">
                             Отчество:
-                            <input class="form__fio-input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
+                            <input class="form__input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
                         </label>
                     </p>
                 </fieldset>
-                <fieldset class="form__fieldset--achieve">
+                <fieldset class="form__fieldset form__fieldset--achieve">
                     <legend class="form__achive-title">Ваши безбашенные достижения в путешествии</legend>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="selfie" checked>
+                            <input class="form__checkbox" type="checkbox" name="selfie" checked>
                             Сделал селфи с акулой
                         </label>
                     </p>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="beach" checked>
+                            <input class="form__checkbox" type="checkbox" name="beach" checked>
                             Обгорел на пляже
                         </label>
                     </p>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="norris">
+                            <input class="form__checkbox" type="checkbox" name="norris">
                             Видел Чака Норриса
                         </label>
                     </p>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="souvenir">
+                            <input class="form__checkbox" type="checkbox" name="souvenir">
                             Накупил сувениров
                         </label>
                     </p>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="tower" checked>
+                            <input class="form__checkbox" type="checkbox" name="tower" checked>
                             Удержал башню
                         </label>
                     </p>
                     <p class="form__achieve-item">
                         <label class="form__label">
-                            <input class="form__achieve-input" type="checkbox" name="hotel">
+                            <input class="form__checkbox" type="checkbox" name="hotel">
                             Разгромил отель
                         </label>
                     </p>
                 </fieldset>
-                <fieldset class="form__fieldset--contacts">
+                <fieldset class="form__fieldset form__fieldset--contacts">
                     <p class="form__contacts-item">
                         <label class="form__label">
                             Номер телефона
-                            <input class="input form__contacts-input" type="tel" name="phone">
+                            <input class="input form__input" type="tel" name="phone">
                         </label>
                     </p>
                     <p class="form__contacts-item">
                         <label class="form__label">
                             Введите почту*
-                            <input class="input form__contacts-input" type="email" name="mail">
+                            <input class="input form__input" type="email" name="mail">
                         </label>
                     </p>
                 </fieldset>
-                <fieldset class="form__fieldset--app">
+                <fieldset class="form__fieldset form__fieldset--app">
                     <legend class="form__app-title">С каким приложением путешествовали?</legend>
                     <p class="form__app-item">
                         <label class="form__label">
-                            <input class="form__app-input" type="radio" name="os-app">
+                            <input class="form__radio" type="radio" name="os-app">
                             Pink для iOS
                         </label>
                     </p>
                     <p class="form__app-item">
                         <label class="form__label">
-                            <input class="form__app-input" type="radio" name="os-app">
+                            <input class="form__radio" type="radio" name="os-app">
                             Pink на Android
                         </label>
                     </p>
                     <p class="form__app-item">
                         <label class="form__label">
-                            <input class="form__app-input" type="radio" name="os-app">
+                            <input class="form__radio" type="radio" name="os-app">
                             Windows Phone
                         </label>
                     </p>
                 </fieldset>
-                <fieldset class="form__fieldset--description">
+                <fieldset class="form__fieldset form__fieldset--description">
                     <legend class="form__description-title">Опишите свои эмоции</legend>
                     <textarea name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
-                <button type="submit" class="form__button">Отправить форму</button>
+                <button type="submit" class="form__submit">Отправить форму</button>
                 <p class="form__obligatory">* - Обязательные поля</p>
             </form>
         </section>
@@ -136,9 +136,9 @@
     <footer class="footer-page">
         <a class="logo-footer" href="index.html">PINK</a>
         <section class="social">
-            <a class="social__twitter" href="#">Твиттер</a>
-            <a class="social__fb" href="#">Фейсбук</a>
-            <a class="social__youtube" href="#">Ютуб</a>
+            <a class="social__icon social__icon--twitter" href="#">Твиттер</a>
+            <a class="social__icon social__icon--fb" href="#">Фейсбук</a>
+            <a class="social__icon social__icon--youtube" href="#">Ютуб</a>
         </section>
         <section class="creator">
             <p>Разработано</p>

@@ -27,7 +27,7 @@
         </nav>
     </header>
     <main class="main-page">
-        <h1 class="visually-hidden">Pink - Главная страница</h1>
+        <h1 class="main-title visually-hidden">Pink - Главная страница</h1>
         <section class="download">
             <a href="#" class="download__link-app">Скачать приложение</a>
             <ul class="dowload__list">
@@ -71,16 +71,16 @@
         <section class="reviews">
             <h2 class="visually-hidden">Отзывы</h2>
             <div class="reviews__wrapper slider">
-                <ul class="reviews__list">
-                    <li class="reviews__item">
+                <ul class="reviews__list slider__list">
+                    <li class="reviews__item slider__item">
                         <p class="reviews__author">Николай Петров</p>
                         <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
                     </li>
-                    <li class="reviews__item">
+                    <li class="reviews__item slider__item">
                         <p class="reviews__author">Вася Пупкин</p>
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti cupiditate dolorem laboriosam quos. Ipsum, sit rerum quasi soluta perferendis, sed quisquam deleniti in dicta explicabo culpa recusandae id fuga.</p>
                     </li>
-                    <li class="reviews__item">
+                    <li class="reviews__item slider__item">
                         <p class="reviews__author">Сан Саныч</p>
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum, nemo maxime nobis quod aliquid repellendus alias temporibus eum iste voluptatum reprehenderit praesentium labore cumque dignissimos magnam asperiores itaque quidem.</p>
                     </li>
@@ -95,7 +95,24 @@
         <section class="price">
             <h2 class="visually-hidden">Цены</h2>
             <div class="price__wrapper slider">
-                <div class="price__tariff price__tariff--hit">
+                <div class="price__tariff slider__tariff">
+                    <div class="price__head">
+                        <p class="price__tariff-name">База</p>
+                        <p class="price__cost">1,99 USD</p>
+                    </div>
+                    <ul class="price__list">
+                        <li class="price__item price__item--yes">
+                            <p>Розовый фильтр</p>
+                        </li>
+                        <li class="price__item price__item--no">
+                            <p>Смайлики</p>
+                        </li>
+                        <li class="price__item price__item--no">
+                            <p>Комментарии</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price__tariff price__tariff--hit slider__tariff">
                     <div class="price__head">
                         <p class="price__tariff-name">Стандарт</p>
                         <p class="price__cost">3,99 USD</p>
@@ -112,6 +129,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="price__tariff slider__tariff">
+                    <div class="price__head">
+                        <p class="price__tariff-name">Анлим</p>
+                        <p class="price__cost">9,99 USD</p>
+                    </div>
+                    <ul class="price__list">
+                        <li class="price__item price__item--yes">
+                            <p>Розовый фильтр</p>
+                        </li>
+                        <li class="price__item price__item--yes">
+                            <p>Смайлики</p>
+                        </li>
+                        <li class="price__item price__item--yes">
+                            <p>Комментарии</p>
+                        </li>
+                    </ul>
+                </div>
                 <div class="price__toggles slider__toggles">
                     <input type="radio" class="slider__toggle">
                     <input type="radio" class="slider__toggle">
@@ -123,11 +157,11 @@
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
             <div class="contacts__item">
                 <h3 class="contacts__item-title">Звоните:</h3>
-                <p class="contacts__text">+7(812)555-66-66</p>
+                <a href="tel:+78125556666" class="contacts__text">+7(812)555-66-66</a>
             </div>
             <div class="contacts__item">
                 <h3 class="contacts__item-title">Пишите:</h3>
-                <p class="contacts__text">mail@htmlacademy.ru</p>
+                <a href="mailto:mail@htmlacademy.ru" class="contacts__text">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts__item">
                 <h3 class="contacts__item-title">Приезжайте в гости:</h3>
@@ -135,8 +169,17 @@
             </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="footer-page visually-hidden">
+        <a class="logo-footer" href="index.html">PINK</a>
+        <section class="social">
+            <a class="social__icon social__icon--twitter" href="#">Твиттер</a>
+            <a class="social__icon social__icon--fb" href="#">Фейсбук</a>
+            <a class="social__icon social__icon--youtube" href="#">Ютуб</a>
+        </section>
+        <section class="creator">
+            <p>Разработано</p>
+            <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt=""></a>
+        </section>
     </footer>
 </body>
 
