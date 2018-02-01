@@ -2,48 +2,53 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Pink: Конкурс</title>
 </head>
 <body>
     <header class="header-page">
-        <a class="logo" href="index.html"><img src="#" alt="Pink"></a>
-        <nav class="main-nav">
-            <button type="button" class="main-nav__toggle">Открыть меню</button>
-            <ul class="main-nav__list site-list">
-                <li class="site-list__item">
-                    <a class="site-list__link" href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="photo.html">Фотографии</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link">Конкурс</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header-page__container container">
+            <div class="header-page__wrapper">
+            <a class="header-page__logo" href="index.html"></a>
+            </div>
+            <nav class="main-nav">
+                <button type="button" class="main-nav__toggle main-nav__toggle--opened"></button>
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="photo.html">Фотографии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link">Конкурс</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main-page">
-        <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="main-page__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <section class="main-content">
             <h2>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</h2>
             <form class="form" method="post" action="#">
                 <fieldset class="form__fieldset form__fieldset--fio">
-                    <p class="form__fio-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             Фамилия:
                             <input class="form__input" type="text" placeholder="Укажите фамилию*" name="surname">
                         </label>
                     </p>
-                    <p class="form__fio-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             Имя:
                             <input class="form__input" type="text" placeholder="Введите ваше имя*" name="name">
                         </label>
                     </p>
-                    <p class="form__fio-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             Отчество:
                             <input class="form__input" type="text" placeholder="Ну и отчество тоже" name="patronymic">
@@ -51,38 +56,38 @@
                     </p>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--achieve">
-                    <legend class="form__achive-title">Ваши безбашенные достижения в путешествии</legend>
-                    <p class="form__achieve-item">
+                    <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="selfie" checked>
                             Сделал селфи с акулой
                         </label>
                     </p>
-                    <p class="form__achieve-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="beach" checked>
                             Обгорел на пляже
                         </label>
                     </p>
-                    <p class="form__achieve-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="norris">
                             Видел Чака Норриса
                         </label>
                     </p>
-                    <p class="form__achieve-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="souvenir">
                             Накупил сувениров
                         </label>
                     </p>
-                    <p class="form__achieve-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="tower" checked>
                             Удержал башню
                         </label>
                     </p>
-                    <p class="form__achieve-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__checkbox" type="checkbox" name="hotel">
                             Разгромил отель
@@ -90,13 +95,13 @@
                     </p>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--contacts">
-                    <p class="form__contacts-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             Номер телефона
                             <input class="input form__input" type="tel" name="phone">
                         </label>
                     </p>
-                    <p class="form__contacts-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             Введите почту*
                             <input class="input form__input" type="email" name="mail">
@@ -104,20 +109,20 @@
                     </p>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--app">
-                    <legend class="form__app-title">С каким приложением путешествовали?</legend>
-                    <p class="form__app-item">
+                    <legend class="form__legend">С каким приложением путешествовали?</legend>
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__radio" type="radio" name="os-app">
                             Pink для iOS
                         </label>
                     </p>
-                    <p class="form__app-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__radio" type="radio" name="os-app">
                             Pink на Android
                         </label>
                     </p>
-                    <p class="form__app-item">
+                    <p class="form__input-wrapper">
                         <label class="form__label">
                             <input class="form__radio" type="radio" name="os-app">
                             Windows Phone
@@ -125,7 +130,7 @@
                     </p>
                 </fieldset>
                 <fieldset class="form__fieldset form__fieldset--description">
-                    <legend class="form__description-title">Опишите свои эмоции</legend>
+                    <legend class="form__legend">Опишите свои эмоции</legend>
                     <textarea name="description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
                 </fieldset>
                 <button type="submit" class="form__submit">Отправить форму</button>
@@ -141,7 +146,7 @@
             <a class="social__icon social__icon--youtube" href="#">Ютуб</a>
         </section>
         <section class="creator">
-            <p>Разработано</p>
+            <p class="creator__text">Разработано</p>
             <a class="creator__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt=""></a>
         </section>
     </footer>
