@@ -10,7 +10,7 @@
     <header class="header-page">
         <div class="header-page__container container desktop-container">
             <div class="header-page__wrapper">
-            <a class="header-page__logo"></a>
+                <a class="header-page__logo"></a>
             </div>
             <nav class="main-nav">
                 <button type="button" class="main-nav__toggle main-nav__toggle--opened"></button>
@@ -41,13 +41,13 @@
                         <a href="#" class="download__link-app">Скачать приложение</a>
                         <ul class="download__list">
                             <li class="download__item">
-                                <a href="#" class="download__link download__link--apple"></a>
+                                <a href="#" class="download__link download__link--apple">Apple</a>
                             </li>
                             <li class="download__item">
-                                <a href="#" class="download__link download__link--android"></a>
+                                <a href="#" class="download__link download__link--android">Android</a>
                             </li>
                             <li class="download__item">
-                                <a href="#" class="download__link download__link--windows"></a>
+                                <a href="#" class="download__link download__link--windows">Windows</a>
                             </li>
                         </ul>
                         <p class="download__text">
@@ -66,19 +66,28 @@
                 Нам есть, что вам<br>предложить!
             </p>
             <ul class="advantages__list">
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--mood">
                     <h3 class="advantages__item-title">Поднимает настроение</h3>
                     <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                 </li>
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--change">
                     <h3 class="advantages__item-title">Меняет мир вокруг</h3>
                     <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                 </li>
-                <li class="advantages__item">
+                <li class="advantages__item advantages__item--friends">
                     <h3 class="advantages__item-title">Заводит новых друзей</h3>
                     <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                 </li>
             </ul>
+            <div class="advantages__wrapper">
+                <div class="advantages__effect">
+                    <h3 class="advantages__effect-title">Эффект<br> на 24 часа!</h3>
+                    <p class="advantages__effect-text">Британские ученые провели исследования
+                    и доказали, что положительный эффект<br> от использования приложения длится 
+                    целые сутки!</p>
+                    <a class="advantages__effect-link" href="#">Узнать больше об исследовании</a>
+                </div>
+            </div>
         </section>
         <section class="reviews">
             <h2 class="visually-hidden">Отзывы</h2>
@@ -86,14 +95,17 @@
                 <ul class="reviews__list slider__list">
                     <li class="reviews__item slider__item">
                         <p class="reviews__author">Николай Петров</p>
+                        <p class="reviews__">25 лет, водитель трамвая</p>
                         <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
                     </li>
                     <li class="reviews__item slider__item">
                         <p class="reviews__author">Вася Пупкин</p>
+                        <p class="reviews__">28 лет, юрист</p>
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, deleniti cupiditate dolorem laboriosam quos. Ipsum, sit rerum quasi soluta perferendis, sed quisquam deleniti in dicta explicabo culpa recusandae id fuga.</p>
                     </li>
                     <li class="reviews__item slider__item">
                         <p class="reviews__author">Сан Саныч</p>
+                        <p class="reviews__">30 лет, каскадер</p>
                         <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum, nemo maxime nobis quod aliquid repellendus alias temporibus eum iste voluptatum reprehenderit praesentium labore cumque dignissimos magnam asperiores itaque quidem.</p>
                     </li>
                 </ul>
@@ -107,8 +119,8 @@
         <section class="price">
             <h2 class="visually-hidden">Цены</h2>
             <div class="price__wrapper slider">
-                <div class="slider-list">
-                    <div class="price__tariff slider__tariff">
+                <div class="slider__list">
+                    <div class="price__tariff slider__item">
                         <div class="price__head">
                             <p class="price__tariff-name">База</p>
                             <p class="price__cost">1,99 USD</p>
@@ -125,7 +137,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="price__tariff price__tariff--hit slider__tariff">
+                    <div class="price__tariff price__tariff--hit slider__item">
                         <div class="price__head">
                             <p class="price__tariff-name">Стандарт</p>
                             <p class="price__cost">3,99 USD</p>
@@ -142,7 +154,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="price__tariff slider__tariff">
+                    <div class="price__tariff slider__item">
                         <div class="price__head">
                             <p class="price__tariff-name">Анлим</p>
                             <p class="price__cost">9,99 USD</p>
