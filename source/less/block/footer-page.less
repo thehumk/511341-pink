@@ -1,0 +1,42 @@
+.footer-page {
+    display: flex;
+    justify-content: space-between;
+    min-height: 127px;
+
+    @media (max-width: 659px) {
+        display: none;
+    }
+}
+
+.footer-page__logo {
+    position: relative;
+    display: block;
+    width: 147px;
+    height: 41px;
+    margin-top: 26px;
+    margin-left: 20px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 147px;
+        height: 41px;
+        top: 0;
+        left: 0;
+        background-image: url(../img/logo-pink-blue-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-page {
+        min-height: 197px;
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-page__logo {
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+}

@@ -10,7 +10,13 @@
     <header class="header-page">
         <div class="header-page__container container desktop-container">
             <div class="header-page__wrapper">
-                <a class="header-page__logo"></a>
+                <a class="header-page__logo">
+                    <picture>
+                        <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                        <img class="header-page__logo-img" src="img/logo-pink-white-mobile.svg" alt="Pink" width="75" height="23">
+                    </picture>
+                </a>
+                
             </div>
             <nav class="main-nav">
                 <button type="button" class="main-nav__toggle main-nav__toggle--opened"></button>

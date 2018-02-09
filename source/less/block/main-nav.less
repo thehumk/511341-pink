@@ -1,11 +1,45 @@
 .main-nav {
-    width: 320px;
+    width: 100%;
+    position: relative;
 }
 
 .main-nav__toggle {
-    width: 50px;
-    height: 25px;
+    position: absolute;
+    right: 19px;
+    top: -49px;
     padding: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &--opened {
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/icon-menu-cross.svg);
+
+        &:hover {
+            background-image: url(../img/icon-menu-cross-hover.svg);
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    &--closed {
+        width: 50px;
+        height: 25px;
+        background-image: url(../img/icon-menu-burger.svg);
+
+        &:hover {
+            background-image: url(../img/icon-menu-burger-hover.svg);
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
 }
 
 .main-nav__list {
@@ -16,15 +50,68 @@
 
 .main-nav__link {
     display: inline-block;
-    width: 284px;
-    height: 25px;
-    padding: 18px;
+    width: 100%;
+    height: 24px;
+    padding: 19px 0;
+    font-weight: bold;
     font-size: 18px;
     text-decoration: none;
     color: white;
+    text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
     background-color: #283645;
     border-top: 1px solid #485461;
     border-bottom: 1px solid black;
+}
+
+.main-nav__link[href] {
+    &:hover {
+        color: #d22856;
+    }
+
+    &:active {
+        color: rgba(210, 40, 86, 0.3);
+    }
+}
+
+
+@media (min-width: 660px) {
+    .main-nav__toggle {
+        top: -65px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-nav {
+        width: 624px;
+        height: 110px;
+    }
+
+    .main-nav__toggle {
+        display: none;
+    }
+
+    .main-nav__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-nav__item {
+        margin: 45px 80px 45px 0;
+    }
+
+    .main-nav__item:last-child {
+        margin-right: 0;
+    }
+
+    .main-nav__link {
+        width: auto;
+        padding: 0;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+    }
 }
