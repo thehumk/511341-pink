@@ -1,10 +1,16 @@
 .footer-page {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 127px;
 
     @media (max-width: 659px) {
-        display: none;
+        &--index {
+            display: none;
+        }
+
+        width: 180px;
+        margin: 0 auto 40px auto;
     }
 }
 
@@ -15,6 +21,11 @@
     height: 41px;
     margin-top: 26px;
     margin-left: 20px;
+
+    @media (max-width: 659px) {
+        margin-top: 19px;
+        margin-left: 17px;
+    }
 
     &::after {
         position: absolute;

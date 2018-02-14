@@ -1,0 +1,122 @@
+.add-photo {
+    margin-top: 43px;
+}
+
+.add-photo__title {
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add-photo__form {
+    position: relative;
+    background-color: #f2f2f2;
+    padding-bottom: 41px;
+    margin-bottom: 20px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: 555px;
+        left: 0;
+        background-color: #000000;
+        opacity: 0.1;
+    }
+}
+
+.add-photo__wrapper {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.add-photo__photo {
+    width: 280px;
+    height: 374px;
+    padding-top: 20px;
+    margin-bottom: -5px;
+}
+
+.add-photo__list {
+    width: 242px;
+    height: 79px;
+    margin: 0;
+    padding-left: 36px;
+    padding-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-photo__item {
+    height: 48px;
+}
+
+.add-photo__crop {
+    width: 48px;
+    height: 48px;
+    margin-right: 32px;
+}
+
+.add-photo__editor-fill {
+    width: 48px;
+    height: 48px;
+    margin-right: 40px;
+    padding-top: 1px;
+}
+
+.add-photo__editor-contrast {
+    width: 32px;
+    height: 32px;
+    padding-top: 8px;
+}
+
+.add-photo__scale {
+    position: relative;
+    width: 240px;
+    height: 2px;
+    margin-left: 20px;
+    margin-top: 6px;
+    margin-bottom: 73px;
+    background-color: #283645;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        top: -6px;
+        right: 33px;
+        background-color: #ffffff;
+        border: 2px solid #d22856;
+        border-radius: 50%;
+    }
+}
+
+.add-photo__button {
+    width: 280px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 49px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    border: 3px solid black;
+    border-radius: 27px;
+
+    &--submit {
+        color: #d22856;
+        border-color: #d22856;
+        margin-bottom: 12px;
+    }
+
+    &--reset {
+        opacity: 0.1;
+    }
+}
