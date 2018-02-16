@@ -3,6 +3,14 @@ body {
     margin: 0;
     background-color: #white;
     font-family: "Open Sans", "Arial", sans-serif;
+
+    @media (min-width: 660px) {
+        min-width: 660px;
+    }
+
+    @media (min-width: 1200px) {
+        min-width: 1200px;
+    }
 }
 
 .container {
@@ -10,18 +18,8 @@ body {
     margin: 0 auto;
 }
 
-@media (min-width: 660px) {
-    body {
-        min-width: 660px;
-    }
-}
-
-@media (min-width: 1200px) {
-    body {
-        min-width: 1200px;
-    }
-
-    .desktop-container {
+.desktop-container {
+    @media (min-width: 1200px) {
         width: 944px;
         margin: 0 auto;
     }

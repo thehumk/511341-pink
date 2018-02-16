@@ -37,7 +37,7 @@
     </header>
     <main class="main-page">
         <div class="main-page__wrapper">
-            <h1 class="main-page__title">Фотографии пользователей</h1>
+            <h1 class="main-page__title main-page__title--photos">Фотографии пользователей</h1>
         </div>
         <section class="photos">
             <h2 class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
@@ -45,60 +45,62 @@
                 <li class="photos__item photos__item--panorama">
                     <img class="photos__photo photos__photo--panorama" src="img/panorama-mobile@1x.jpg" alt="Панорама" width="320" height="137">
                     <p class="photos__panorama-day">Панорама дня</p>
-                    <div class="photos__info-block">
+                    <div class="photos__info-block photos__info-block--panorama">
                         <p class="photos__user-name">Анна<span class="photos__time-post"> (5 минут назад)</span></p>
-                        <p class="photos__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                        <p class="photos__like">Нравится: 215</p>
+                        <p class="photos__text photos__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                        <p class="photos__like photos__like--panorama">Нравится: 215</p>
                     </div>
                 </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--car" src="img/photo-car-mobile@1x.jpg" alt="Машина" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Левон<span class="photos__time-post"> (5 часов назад)</span></p>
-                        <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                        <p class="photos__like">Нравится: 356</p>
-                    </div>
-                </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--drumset" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Антон<span class="photos__time-post"> (12 часов назад)</span></p>
-                        <p class="photos__text">Соседи будут рады!</p>
-                        <p class="photos__like">Нравится: 666</p>
-                    </div>
-                </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--window" src="img/photo-window-mobile@1x.jpg" alt="Окно" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Борис<span class="photos__time-post"> (20 часов назад)</span></p>
-                        <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-                        <p class="photos__like">Нравится: 215</p>
-                    </div>
-                </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--fair" src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Сергей<span class="photos__time-post"> (25 часов назад)</span></p>
-                        <p class="photos__text">Самая кубанская в мире!</p>
-                        <p class="photos__like">Нравится: 4</p>
-                    </div>
-                </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--pov" src="img/photo-pov-mobile@1x.jpg" alt="Нет снега" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Максим<span class="photos__time-post"> (40 часов назад)</span></p>
-                        <p class="photos__text">Где снег-то?</p>
-                        <p class="photos__like">Нравится: 150</p>
-                    </div>
-                </li>
-                <li class="photos__item">
-                    <img class="photos__photo photos__photo--wing" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета" width="280" height="180">
-                    <div class="photos__info-block">
-                        <p class="photos__user-name">Надежда<span class="photos__time-post"> (45 часов назад)</span></p>
-                        <p class="photos__text">Всем GM и взаимные лайки!</p>
-                        <p class="photos__like">Нравится: 2560</p>
-                    </div>
-                </li>
+                <div class="photos__wrapper-flex">
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--car" src="img/photo-car-mobile@1x.jpg" alt="Машина" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Левон<span class="photos__time-post"> (5 часов назад)</span></p>
+                            <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                            <p class="photos__like">Нравится: 356</p>
+                        </div>
+                    </li>
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--drumset" src="img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Антон<span class="photos__time-post"> (12 часов назад)</span></p>
+                            <p class="photos__text">Соседи будут рады!</p>
+                            <p class="photos__like">Нравится: 666</p>
+                        </div>
+                    </li>
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--window" src="img/photo-window-mobile@1x.jpg" alt="Окно" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Борис<span class="photos__time-post"> (20 часов назад)</span></p>
+                            <p class="photos__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                            <p class="photos__like">Нравится: 215</p>
+                        </div>
+                    </li>
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--fair" src="img/photo-fair-mobile@1x.jpg" alt="Ярмарка" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Сергей<span class="photos__time-post"> (25 часов назад)</span></p>
+                            <p class="photos__text">Самая кубанская в мире!</p>
+                            <p class="photos__like">Нравится: 4</p>
+                        </div>
+                    </li>
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--pov" src="img/photo-pov-mobile@1x.jpg" alt="Нет снега" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Максим<span class="photos__time-post"> (40 часов назад)</span></p>
+                            <p class="photos__text">Где снег-то?</p>
+                            <p class="photos__like">Нравится: 150</p>
+                        </div>
+                    </li>
+                    <li class="photos__item">
+                        <img class="photos__photo photos__photo--wing" src="img/photo-wing-mobile@1x.jpg" alt="Крыло самолета" width="280" height="180">
+                        <div class="photos__info-block">
+                            <p class="photos__user-name">Надежда<span class="photos__time-post"> (45 часов назад)</span></p>
+                            <p class="photos__text">Всем GM и взаимные лайки!</p>
+                            <p class="photos__like">Нравится: 2560</p>
+                        </div>
+                    </li>
+                </div>
             </ul>
         </section>
         <section class="add-photo">
@@ -106,20 +108,27 @@
             <div class="add-photo__form">
                 <div class="add-photo__wrapper">
                     <img class="add-photo__photo" src="img/photo-road-mobile@1x.jpg" alt="Дорога" width="280" height="374">
-                    <ul class="add-photo__list">
-                        <li class="add-photo__item">
-                            <img class="add-photo__crop" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезка">
-                        </li>
-                        <li class="add-photo__item">
-                            <img class="add-photo__editor-fill" src="img/icon-editor-fill.svg" width="48" height="48" alt="Заливка">
-                        </li>
-                        <li class="add-photo__item">
-                            <img class="add-photo__editor-contrast" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
-                        </li>
-                    </ul>
-                    <div class="add-photo__scale"></div>
-                    <button class="add-photo__button add-photo__button--submit" type="submit">Запостить</button>
-                    <button class="add-photo__button add-photo__button--reset" type="reset">Отмена</button>
+                    <div class="add-photo__wrapper-list">
+                        <ul class="add-photo__list">
+                            <li class="add-photo__item">
+                                <img class="add-photo__crop" src="img/icon-editor-crop.svg" width="48" height="48" alt="Обрезка">
+                                <div class="add-photo__scale add-photo__scale--crop"></div>
+                            </li>
+                            <li class="add-photo__item">
+                                <img class="add-photo__editor-fill" src="img/icon-editor-fill.svg" width="48" height="48" alt="Заливка">
+                                <div class="add-photo__scale add-photo__scale--fill"></div>
+                            </li>
+                            <li class="add-photo__item">
+                                <img class="add-photo__editor-contrast" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+                                <div class="add-photo__scale add-photo__scale--contrast"></div>
+                            </li>
+                        </ul>
+                        <div class="add-photo__scale add-photo__scale--list"></div>
+                        <div class="add-photo__wrapper-button">
+                            <button class="add-photo__button add-photo__button--submit" type="submit">Запостить</button>
+                            <button class="add-photo__button add-photo__button--reset" type="reset">Отмена</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
