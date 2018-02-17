@@ -1,12 +1,43 @@
 .price {
     padding-top: 37px;
     background-color: #f2f2f2;
+
+    @media (min-width: 660px) {
+        padding-bottom: 68px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-bottom: 95px;
+        padding-top: 67px;
+    }
+}
+
+.price__wrapper {
+    @media (max-width: 659px) {
+        width: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 }
 
 .price__table {
     width: 836px;
     margin: 0 auto;
     border-collapse: collapse;
+
+    @media (max-width: 659px) {
+        position: relative;
+        width: 836px;
+        left: -258px;
+    }
+
+    @media (min-width: 660px) {
+        width: 620px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 940px;
+    }
 }
 
 .price__head-item {
@@ -35,6 +66,24 @@
         background-repeat: no-repeat;
         z-index: 2;
     }
+
+    @media (min-width: 660px) {
+        width: 152px;
+        height: 79px;
+    }
+
+    @media (min-width: 660px) and (max-width:1199px) {
+        &--hit::after {
+            width: 61px;
+            height: 61px;
+            background-image: url(../img/bg-hit-tablet.svg);
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: 232px;
+        height: 98px;
+    }
 }
 
 .price__hit {
@@ -46,12 +95,22 @@
     left: 11px;
     transform: rotate(-45deg);
     z-index: 3;
+
+    @media (min-width: 660px) and (max-width: 1099px) {
+        top: 9px;
+        left: 6px;
+    }
 }
 
 .price__tariff-name {
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 0;
+
+    @media (min-width: 660px) and (max-width: 1099px) {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
 }
 
 .price__cost {
@@ -59,6 +118,11 @@
     margin-bottom: 19px;
     font-weight: 300;
     font-size: 24px;
+
+    @media (min-width: 660px) and (max-width: 1099px) {
+        margin-bottom: 13px;
+        font-size: 18px;
+    }
 }
 
 .price__item {
@@ -97,6 +161,36 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    @media (min-width: 660px) {
+        width: 152px;
+        height: 45px;
+
+        &--yes::after {
+            top: 13px;
+            right: 50%;
+            margin-right: -15px;
+        }
+
+        &--no::after {
+            top: 9px;
+            right: 50%;
+            margin-right: -14px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        width: 233px;
+        height: 59px;
+
+        &--yes::after {
+            top: 22px;
+        }
+
+        &--no::after {
+            top: 16px;
+        }
+    }
 }
 
 .price__text {
@@ -104,25 +198,39 @@
     font-size: 14px;
     color: #283645;
     text-transform: uppercase;
+
+    @media (min-width: 660px) {
+        display: none;
+    }
 }
 
-@media (max-width: 659px) {
-
-    .price__wrapper {
-        width: 320px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .price__table {
-        position: relative;
-        width: 836px;
-        left: -258px;
-    }
-
-    .price__head-cap,
-    .price__name-item {
+.price__head-cap {
+    @media (max-width: 659px) {
         display: none;
+    }
+
+    @media (min-width: 660px) {
+        border-bottom: 2px solid #e5e5e5;
+    }
+}
+
+.price__name-item {
+    @media (max-width: 659px) {
+        display: none;
+    }
+
+    @media (min-width: 660px) {
+        width: 153px;
+        height: 45px;
+        padding: 0;
+        background-color: white;
+        border-bottom: 2px solid #e5e5e5;
+        border-left: 2px solid #e5e5e5;
+    }
+
+    @media (min-width: 1200px) {
+        width: 234px;
+        height: 59px;
     }
 }
 
@@ -130,6 +238,10 @@
     width: 72px;
     margin: 35px auto 0 auto;
     padding-bottom: 40px;
+
+    @media (min-width: 660px) {
+        display: none;
+    }
 }
 
 .price__radio {
@@ -161,59 +273,8 @@
     opacity: 1;
 }
 
-@media (min-width: 660px) {
-
-    .price {
-        padding-bottom: 68px;
-    }
-
-    .price__table {
-        width: 620px;
-    }
-
-    .price__head-item {
-        width: 152px;
-        height: 79px;
-        @media (max-width:1199px) {
-            &--hit::after {
-                width: 61px;
-                height: 61px;
-                background-image: url(../img/bg-hit-tablet.svg);
-            }
-        }
-    }
-
-    @media (max-width: 1099px) {
-        .price__hit {
-            top: 9px;
-            left: 6px;
-        }
-
-        .price__tariff-name {
-            font-size: 16px;
-            margin-bottom: 0;
-        }
-
-        .price__cost {
-            margin-bottom: 13px;
-            font-size: 18px;
-        }
-    }
-
-    .price__head-cap {
-        border-bottom: 2px solid #e5e5e5;
-    }
-
-    .price__name-item {
-        width: 153px;
-        height: 45px;
-        padding: 0;
-        background-color: white;
-        border-bottom: 2px solid #e5e5e5;
-        border-left: 2px solid #e5e5e5;
-    }
-
-    .price__name-text {
+.price__name-text {
+    @media (min-width: 660px) {
         margin: 0;
         padding-left: 15px;
         font-size: 14px;
@@ -221,71 +282,11 @@
         color: #283645;
     }
 
-    .price__text {
-        display: none;
-    }
-
-    .price__item {
-        width: 152px;
-        height: 45px;
-
-        &--yes::after {
-            top: 13px;
-            right: 50%;
-            margin-right: -15px;
-        }
-
-        &--no::after {
-            top: 9px;
-            right: 50%;
-            margin-right: -14px;
-        }
-    }
-
-    .price__toggles {
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .price {
-        padding-bottom: 95px;
-        padding-top: 67px;
-    }
-
-    .price__table {
-        width: 940px;
-    }
-
-    .price__head-item {
-        width: 232px;
-        height: 98px;
-    }
-
-    .price__name-item {
-        width: 234px;
-        height: 59px;
-    }
-
-    .price__name-text {
+    @media (min-width: 1200px) {
         margin: 0;
         padding-left: 24px;
         font-size: 18px;
         line-height: 59px;
         color: #283645;
-    }
-
-    .price__item {
-        width: 233px;
-        height: 59px;
-
-        &--yes::after {
-            top: 22px;
-        }
-
-        &--no::after {
-            top: 16px;
-        }
     }
 }

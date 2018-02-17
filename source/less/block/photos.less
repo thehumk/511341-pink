@@ -1,0 +1,265 @@
+.photos {
+    width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: 660px) {
+        width: 660px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+.photos__title {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    text-align: center;
+
+    @media (min-width: 660px) {
+        width: 460px;
+        margin-top: 92px;
+        font-size: 18px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 600px;
+    }
+}
+
+.photos__list {
+    margin: 0;
+    margin-top: 49px;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: 660px) {
+        margin-top: 75px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-top: 88px;
+    }
+}
+
+.photos__wrapper-flex {
+    @media (min-width:660px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 1200px) {
+        width: 940px;
+        margin: 0 auto;
+    }
+}
+
+.photos__item {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    &--panorama {
+        position: relative;
+        width: 320px;
+    }
+
+    @media (min-width: 660px) {
+        width: 300px;
+        margin-left: 20px;
+        margin-right: 0;
+
+        &--panorama {
+            width: 660px;
+            margin: 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        margin-left: 0;
+        margin-right: 20px;
+        margin-bottom: 54px;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &--panorama {
+            width: 1200px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+.photos__photo {
+    margin-bottom: -5px;
+    width: 280px;
+    height: 180px;
+
+    &--panorama {
+        width: 320px;
+        height: 137px;
+    }
+
+    @media (min-width: 660px) {
+        width: 300px;
+        height: 300px;
+
+        &--panorama {
+            width: 660px;
+            height: 509px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        height: 400px;
+
+        &--panorama {
+            width: 1200px;
+            height: 506px;
+        }
+    }
+}
+
+.photos__panorama-day {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 36px;
+    margin: 0;
+    top: 0;
+    right: 20px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #d22856;
+
+    @media (min-width: 660px) {
+        top: 57px;
+    }
+
+    @media (min-width: 1200px) {
+        top: 54px;
+        right: 130px;
+    }
+}
+
+.photos__info-block {
+    width: 244px;
+    margin: 0 auto;
+    padding: 20px 18px 24px 18px;
+    background-color: #f2f2f2;
+
+    @media (min-width: 660px) {
+        width: 249px;
+        min-height: 104px;
+        padding: 27px 24px 24px 27px;
+
+        &--panorama {
+            width: 569px;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 95px;
+            padding-bottom: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &--panorama {
+            width: 889px;
+            min-height: 45px;
+        }
+    }
+}
+
+.photos__user-name {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.photos__time-post {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.photos__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #283645;
+
+    @media(min-width: 660px) {
+        min-height: 63px;
+
+        &--panorama {
+            order: 2;
+            margin-top: -10px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &--panorama {
+            margin-top: 0px;
+            min-height: 47px;
+        }
+    }
+}
+
+.photos__like {
+    position: relative;
+    margin: 0;
+    margin-top: 13px;
+    padding-left: 32px;
+    font-size: 12px;
+    color: #d22856;
+    text-transform: uppercase;
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 13px;
+        height: 12px;
+        top: 3px;
+        left: 0;
+        background-image: url(../img/icon-heart.svg);
+        background-repeat: no-repeat;
+    }
+
+    @media(min-width: 660px) {
+        margin-right: 3px;
+        margin-top: 0;
+        padding-left: 0;
+
+        &--panorama {
+            order: 1;
+            margin-left: auto;
+            margin-right: 0;
+            margin-top: 1px;
+            padding-right: 35px;
+        }
+
+        &::after {
+            top: 2px;
+            right: 5px;
+            left: auto;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &--panorama {
+            margin-right: 3px;
+        }
+    }
+}

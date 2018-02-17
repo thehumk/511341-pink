@@ -1,9 +1,32 @@
+.header-page {
+    @media (min-width: 1200px) {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        min-height: 110px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
 .header-page__wrapper {
     width: 100%;
     height: 68px;
     background-color: #283645;
     border-top: 1px solid #485461;
     border-bottom: 1px solid black;
+
+    @media (min-width: 660px) {
+        height: 108px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 147px;
+        height: 110px;
+        margin-left: 2px;
+        margin-right: 172px;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 
@@ -12,50 +35,29 @@
     width: 75px;
     height: 22px;
     margin: 21px 20px;
-}
 
-@media (min-width: 660px) {
-    .header-page__wrapper {
-        height: 108px;
-    }
-
-    .header-page__logo {
+    @media (min-width: 660px) {
         width: 147px;
         height: 40px;
         margin: 26px 20px 42px 20px;
     }
 
-    .header-page__logo-img {
+    @media (min-width: 1200px) {
+        width: 147px;
+        height: 40px;
+        margin: 27px 0 43px 0;
+    }
+}
+
+.header-page__logo-img {
+    @media (min-width: 660px) {
         width: 147px;
         height: 41px;
     }
 }
 
-@media (min-width: 1200px) {
-    .header-page {
-        position: absolute;
-        z-index: 2;
-        width: 100%;
-        min-height: 110px;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .header-page__container {
+.header-page__container {
+    @media (min-width: 1200px) {
         display: flex;
-    }
-
-    .header-page__wrapper {
-        width: 147px;
-        height: 110px;
-        margin-left: 2px;
-        margin-right: 172px;
-        border: none;
-        background-color: transparent;
-    }
-
-    .header-page__logo {
-        width: 147px;
-        height: 40px;
-        margin: 27px 0 43px 0;
     }
 }
