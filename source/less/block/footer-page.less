@@ -33,19 +33,39 @@
         margin-left: 17px;
     }
 
-    &::after {
-        position: absolute;
-        content: "";
-        width: 147px;
-        height: 41px;
-        top: 0;
-        left: 0;
-        background-image: url(../img/logo-pink-blue-mobile.svg);
-        background-repeat: no-repeat;
-    }
-
     @media (min-width: 960px) {
         margin-top: 63px;
         margin-left: 10px;
+    }
+}
+
+.footer-page__logo-svg {
+    width: 147px;
+    height: 41px;
+
+    &:hover {
+        path {
+            fill: #d22856;
+        }
+    }
+
+    &:active {
+        opacity: 0.3;
+
+        .footer-page__path-text {
+            fill: #283645;
+        }
+    }
+
+    @media (max-width: 959px) {
+        &--desktop {
+            display: none;
+        }
+    }
+
+    @media (min-width: 960px) {
+        &--tablet {
+            display: none;
+        }
     }
 }
