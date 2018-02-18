@@ -49,12 +49,63 @@
     }
 }
 
-.header-page__logo-img {
+.header-page__logo-svg {
+    &:hover path {
+        fill: #d22856;
+    }
+
+    &:active path {
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+
+    @media (max-width: 659px) {
+        width: 75px;
+        height: 22px;
+
+        &--tablet,
+        &--desktop {
+            display: none;
+        }
+    }
+
+    @media (min-width: 660px) and (max-width: 959px) {
+        width: 147px;
+        height: 40px;
+
+        &--mobile,
+        &--desktop {
+            display: none;
+        }
+    }
+
+    @media (min-width: 960px) {
+        width: 147px;
+        height: 40px;
+
+        &--tablet,
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+.header-page__spectacles {
+    @media (max-width: 659px) {
+        display: none;
+    }
+}
+
+/*.header-page__logo-img {
+    &:hover {
+        color: #d22856;
+    }
+
     @media (min-width: 660px) {
         width: 147px;
         height: 41px;
     }
-}
+}*/
 
 .header-page__container {
     @media (min-width: 960px) {

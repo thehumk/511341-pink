@@ -123,6 +123,15 @@
     color: #283645;
     border: 2px solid #e7e7e7;
 
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:focus {
+        border-color: #d22856;
+        outline: none;
+    }
+
     @media (min-width: 660px) {
         display: block;
         width: 100%;
@@ -236,6 +245,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:active {
+       border-color: #d22856;
+    }
 }
 
 .form__checkbox:checked + .form__castom-checkbox {
@@ -287,8 +304,9 @@
             top: 12px;
             right: 2px;;
             background-color: #e5e5e5;
-            //background-image: url();
-            //background-repeat: no-repeat;
+            background-image: url("../img/icon-phone.svg");
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--mail:after {
@@ -299,8 +317,9 @@
             top: 12px;
             right: 2px;
             background-color: #e5e5e5;
-            //background-image: url();
-            //background-repeat: no-repeat;
+            background-image: url("../img/icon-mail.svg");
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
@@ -338,6 +357,15 @@
     font-size: 18px;
     color: #283645;
     border: 2px solid #e7e7e7;
+
+    &:hover {
+        border-color: #283645;
+    }
+    
+    &:focus {
+        border-color: #d22856;
+        outline: none;
+    }
 
     @media (min-width: 660px) {
         width: 478px;
@@ -387,6 +415,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:active {
+       border-color: #d22856;
+    }
 }
 
 .form__text-radio {
@@ -472,6 +508,15 @@
     background-color: #2aab6d;
     border-radius: 2px;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1c9b5e;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
 
     @media (min-width: 660px) {
         width: 300px;

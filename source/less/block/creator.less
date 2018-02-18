@@ -32,15 +32,14 @@
     @media (min-width: 960px) {
         margin-top: 45px;
     }
+}
 
-    &::after {
-        position: absolute;
-        content: "";
-        width: 27px;
-        height: 35px;
-        top: 0;
-        left: 0;
-        background-image: url(../img/logo-htmlacademy.svg);
-        background-repeat: no-repeat;
+.creator__svg-logo {
+    &:hover path {
+        fill: #283645;
+    }
+
+    &:active path {
+        fill: rgba(40, 54, 69, 0.3);
     }
 }

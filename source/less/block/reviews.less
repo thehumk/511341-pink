@@ -11,6 +11,44 @@
 
 }
 
+.reviews__wrapper {
+    @media (min-width: 960px) {
+        position: relative;
+        width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.reviews__arrow {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 42px;
+    top: 213px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &--left {
+        left: -120px;
+    }
+
+    &--right {
+        right: -120px;
+    }
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:active {
+        opacity: 0.1;
+    }
+
+    @media (max-width: 959px) {
+        display: none;
+    }
+}
+
 .reviews__list {
     width: 280px;
     margin: 0 auto;
@@ -22,8 +60,21 @@
     }
 
     @media (min-width: 960px) {
+        position: relative;
         width: 700px;
         padding-top: 88px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 79px;
+            height: 64px;
+            top: 72px;
+            left: 50%;
+            margin-left: -39px;
+            background-image: url(../img/icon-quotes.svg);
+            background-repeat: no-repeat;
+        }
     }
 }
 
