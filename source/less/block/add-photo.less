@@ -5,7 +5,7 @@
         margin-top: 45px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-top: 5px;
         margin-bottom: 38px;
     }
@@ -26,7 +26,7 @@
         margin-bottom: 69px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-bottom: 66px;
     }
 }
@@ -57,7 +57,7 @@
         margin-bottom: 10px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 940px;
         margin: 0 auto;
         padding-bottom: 56px;
@@ -75,7 +75,7 @@
         padding-top: 57px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 820px;
     }
 }
@@ -92,7 +92,7 @@
         padding-top: 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-left: 20px;
     }
 }
@@ -114,7 +114,7 @@
         padding-top: 5px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 410px;
         padding-left: 90px;
     }
@@ -146,7 +146,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 410px;
     }
 }
@@ -155,8 +155,17 @@
     width: 48px;
     height: 48px;
     margin-right: 32px;
+    opacity: 0.3;
 
-    @media (min-width: 660px) and (max-width: 1199px) {
+    &:hover {
+        opacity: 0.5;
+
+        path {
+            fill: #000000;
+        }
+    }
+
+    @media (min-width: 660px) and (max-width: 959px) {
         width: 24px;
         height: 24px;
         margin-left: 2px;
@@ -164,7 +173,7 @@
         margin-right: 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-top: -9px;
         margin-right: 0;
         margin-left: -2px;
@@ -176,8 +185,17 @@
     height: 48px;
     margin-right: 40px;
     padding-top: 1px;
+    opacity: 0.3;
 
-    @media (min-width: 660px) and (max-width: 1199px) {
+    &:hover {
+        opacity: 0.5;
+
+        path {
+            fill: #000000;
+        }
+    }
+
+    @media (min-width: 660px) and (max-width: 959px) {
         width: 24px;
         height: 24px;
         margin-right: 0;
@@ -185,7 +203,7 @@
         margin-top: 4px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 959px) {
         margin-top: -8px;
         margin-right: 0;
     }
@@ -195,18 +213,39 @@
     width: 32px;
     height: 32px;
     padding-top: 8px;
+    opacity: 0.3;
 
-    @media (min-width: 660px) and (max-width: 1199px) {
+    &:hover {
+        opacity: 0.5;
+
+        path {
+            fill: #000000;
+        }
+    }
+
+    @media (min-width: 660px) and (max-width: 959px) {
         width: 16px;
         height: 16px;
         padding-top: 5px;
         margin-left: 8px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-top: -11px;
         margin-right: 0;
         margin-left: 6px;
+    }
+}
+
+.add-photo__active {
+    opacity: 1;
+
+    path {
+        fill: #d22856;
+    }
+
+    rect {
+        fill: #d22856;
     }
 }
 
@@ -215,6 +254,7 @@
     width: 240px;
     height: 2px;
     background-color: #283645;
+    cursor: pointer;
 
     &::after {
         position: absolute;
@@ -226,6 +266,10 @@
         background-color: #ffffff;
         border: 2px solid #d22856;
         border-radius: 50%;
+    }
+
+    &:active::after {
+        background-color: #d22856;
     }
 
     @media (max-width: 659px) {
@@ -278,7 +322,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         &::after {
             background-color: #f2f2f2;
         }
@@ -319,7 +363,7 @@
         margin-top: 67px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 410px;
         margin-left: 90px;
         margin-top: 147px;
@@ -335,17 +379,35 @@
     text-align: center;
     color: #000000;
     background-color: #ffffff;
-    border: 3px solid black;
+    border: 3px solid #000000;
     border-radius: 27px;
 
     &--submit {
         color: #d22856;
         border-color: #d22856;
         margin-bottom: 12px;
+
+        &:hover {
+            background-color: #d22856;
+            color: #ffffff;
+        }
+
+        &:active {
+            color: rgba(255, 255, 255, 0.3);
+        }
     }
 
     &--reset {
         opacity: 0.1;
+
+        &:hover {
+            opacity: 0.3;
+        }
+
+        &:active {
+            color: #ffffff;
+            background-color: #000000;
+        }
     }
 
     @media (min-width: 660px) {
@@ -356,7 +418,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 183px;
         background-color: #f2f2f2;
 

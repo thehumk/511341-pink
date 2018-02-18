@@ -6,7 +6,7 @@
         margin: 0 auto;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 940px;
     }
 }
@@ -61,7 +61,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         &--fio {
             width: 435px;
             margin: 0;
@@ -106,7 +106,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 435px;
     }
 }
@@ -122,6 +122,15 @@
     font-size: 18px;
     color: #283645;
     border: 2px solid #e7e7e7;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:focus {
+        border-color: #d22856;
+        outline: none;
+    }
 
     @media (min-width: 660px) {
         display: block;
@@ -148,7 +157,7 @@
 }
 
 .form__wrapper-achieve {
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -183,7 +192,7 @@
         }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         &--achieve {
             margin-bottom: 45px;
         }
@@ -200,7 +209,7 @@
         margin-top: 5px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 260px;
         margin: 0;
         margin-bottom: 43px;
@@ -208,7 +217,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
     .form__label-checkbox:nth-child(1),
     .form__label-checkbox:nth-child(2) {
         margin-left: 58px;
@@ -236,6 +245,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 1px;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:active {
+       border-color: #d22856;
+    }
 }
 
 .form__checkbox:checked + .form__castom-checkbox {
@@ -287,8 +304,9 @@
             top: 12px;
             right: 2px;;
             background-color: #e5e5e5;
-            //background-image: url();
-            //background-repeat: no-repeat;
+            background-image: url("../img/icon-phone.svg");
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--mail:after {
@@ -299,18 +317,13 @@
             top: 12px;
             right: 2px;
             background-color: #e5e5e5;
-            //background-image: url();
-            //background-repeat: no-repeat;
+            background-image: url("../img/icon-mail.svg");
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
-    @media (min-width: 660px) and (min-width: 1200px) {
-        &--number {
-            margin-right: 70px;
-        }
-    }
-
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         &--contacts {
             width: 375px;
             margin-top: 24px;
@@ -319,11 +332,15 @@
         &--mail {
             margin-left: 0;
         }
+
+        &--number {
+            margin-right: 70px;
+        }
     }
 }
 
 .form__wrapper-contacts {
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         display: flex;
         flex-wrap: wrap;
     }
@@ -341,12 +358,21 @@
     color: #283645;
     border: 2px solid #e7e7e7;
 
+    &:hover {
+        border-color: #283645;
+    }
+    
+    &:focus {
+        border-color: #d22856;
+        outline: none;
+    }
+
     @media (min-width: 660px) {
         width: 478px;
         margin-bottom: 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 353px;
     }
 }
@@ -359,7 +385,7 @@
         margin-bottom: 44px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         margin-bottom: 47px;
     }
 }
@@ -372,7 +398,7 @@
         padding-left: 58px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         padding-left: 74px;
     }
 }
@@ -389,6 +415,14 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
     border-radius: 50%;
+
+    &:hover {
+        border-color: #283645;
+    }
+
+    &:active {
+       border-color: #d22856;
+    }
 }
 
 .form__text-radio {
@@ -435,7 +469,7 @@
         margin: 37px auto 50px auto;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 796px;
         height: 110px;
         margin-top: 34px;
@@ -456,7 +490,7 @@
         order: 5;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 960px) {
         width: 940px;
         margin-top: 65px;
         margin-bottom: 10px;
@@ -474,6 +508,15 @@
     background-color: #2aab6d;
     border-radius: 2px;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #1c9b5e;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
 
     @media (min-width: 660px) {
         width: 300px;
@@ -498,7 +541,7 @@
 }
 
 .form__wrapper-text {
-    @media (max-width: 1199px) {
+    @media (max-width: 959px) {
         display: none;
     }
 }
